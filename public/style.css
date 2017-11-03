@@ -1,0 +1,181 @@
+.body{
+	background-color: #fafafa;
+}
+
+#table{
+	width: 70vw;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: solid;
+ }
+ .nav-header{
+ 	background-color: #f1f1f1;
+ 	margin-bottom: 2rem;
+ }
+.hobby{
+	font-size: 2rem;
+	cursor: pointer;
+}
+.hobby:hover{
+	color: blue;
+}
+.mail-field{
+	min-width: 300px;
+	display: none;
+	position: fixed;
+	top: 14%;
+	left: 26%;
+	width: 45%;
+	height: 35rem;
+	background-color: whitesmoke;
+	z-index: 3;
+	padding: 1%;
+}
+.mail-field div{
+	margin-top: 0.7rem
+}
+.mail{
+	cursor: pointer;
+	font-size: 3rem;
+}
+.mail:hover{
+	color: #ffaaaa;
+}
+#close{
+    outline: none;
+}
+input{
+	width: 85%;
+	padding-left: 1%;
+	margin: 0.5rem;
+}
+.btn-send{
+	width: 13%;
+	float: right;
+	margin-right: 4%;
+}
+textarea{
+	height: 20vh;
+	resize: none;
+	width: 95%;
+}
+.navbar-brand{
+	cursor: pointer;
+}
+.navbar-brand:hover{
+    color: #337ab7;
+}
+.table tr:nth-child(odd){
+    background-color: #e9e6c6;
+}
+.table .row th,td{
+	font-size: 1rem;
+	text-align: center;
+}
+#table-header{
+	background-color: khaki;
+}
+.addContact{
+	min-width: 300px;
+	display: none;
+	position: fixed;
+	top: 14%;
+	left: 33%;
+	width: 25%;
+	height: 30rem;
+	background-color: whitesmoke;
+	z-index: 3;
+	padding: 1%;	
+}
+.addContact input{
+	width: 90%;
+	padding-left: 1%;
+	margin: 0.5rem;
+}
+#btn_save{
+	width: 20%;
+}
+.bg-blur{
+    position: absolute;
+    top: 0;
+    display: none;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	background-color: rgba(0,0,0, 0.5);
+}
+.delete-window{
+    min-width: 250px;
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 38%;
+    width: 25%;
+    height: 10rem;
+	background-color: whitesmoke;
+	z-index: 3;
+	padding: 1%;
+	border-radius: 5px;
+	border: 1px solid #ffeb3b;
+}
+.delete{
+	cursor: pointer;
+    font-size: 3rem;
+}
+
+.delete:hover{
+   color: #ff0000;
+}
+.email-success-msg{
+	position: fixed;
+    left: 50%;
+    top: 25%;
+    width: 19%;
+    height: 10%;
+    padding: 1%;
+    font-size: 1.7rem;
+    border-radius: 7px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    animation: disapear 4s 1;
+	display: none;
+}
+.avatar{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+@keyframes disapear{
+
+	0%{
+		background-color: rgba(0,0,0,0.1);
+	}
+
+	15%{
+		   background-color: rgba(0,0,0,0.3);
+	}
+
+	30%{
+		   background-color: rgba(0,0,0,0.5);
+	}
+
+	50%{
+		   background-color: rgba(0,0,0,0.7);
+	}
+
+	75%{
+		   background-color: rgba(0,0,0,0.5);
+	}
+
+	85%{
+		   background-color: rgba(0,0,0,0.3);
+	}
+
+	95%{
+		   background-color: rgba(0,0,0,0.1);
+	}
+
+	100%{
+		   background-color: rgba(0,0,0,0.0);
+	}
+}

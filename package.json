@@ -1,0 +1,26 @@
+{
+  "name": "x-mongoose-phonebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.6",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yassermorteza/x-mongoose-phonebook.git"
+  },
+  "author": "Yasser Morteza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yassermorteza/x-mongoose-phonebook/issues"
+  },
+  "homepage": "https://github.com/Yassermorteza/x-mongoose-phonebook#readme"
+}

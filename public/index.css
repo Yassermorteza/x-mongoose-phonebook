@@ -1,0 +1,28 @@
+*+*{
+  margin: 0.5rem;
+}
+
+header{
+	background-color: #e2e2e2;
+	height: 8vh;
+	margin-bottom: 10%;
+	font-size: 1.5rem;
+	padding: 1%;
+	line-height: 190%;
+}
+
+header span{
+   padding: 1vh;
+}
+
+header span:hover{
+	cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+fieldset{
+   width: 15%;
+   height: 50vh;
+   min-height: 285px;
+   margin: 0 auto;
+}

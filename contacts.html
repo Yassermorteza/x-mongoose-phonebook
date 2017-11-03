@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts Table</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="body">
+    <nav class="nav-header">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <span class="navbar-brand contact_form-show">	&#43;Contact</span>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</nav> 
+	<div class="container"> 
+	  <table id="table" class="table table-striped">
+			<tr class="row" id="table-header"><th>Avatar</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Phone Number</th><th>Send Email</th><th>Hobbies</th><th>Delete</th></tr>
+	 </table>      
+	  <!-- Modal -->
+	  <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Hobbies</h4>
+	        </div>
+	        <div class="modal-body">
+	          <div class="list-group"></div>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	      
+	    </div>
+	  </div>
+	  <div>
+	   <fieldset class="mail-field">
+	    <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+	 	<form id="emailForm">
+	 	    <legend>Send email</legend>
+	 	    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+	 	      <label for="mailto">mail to:</label>
+	 		  <input type="text" name="mailto" required id="mailto">
+	 	    </div>
+	 	    <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+	 	      <label for="subject">subject:</label>
+	 	      <input type="text" name="subject" id="subject" required placeholder="mail subject here ...">
+	 	    </div>
+	 	    <div class="col-lg-12 col-md-12 col-sm-12">
+		 	    <label for="content">content:</label>
+		 	    <textarea name="content" id="content" required minlength="50" maxlength="200"></textarea>
+		 	</div>																
+	 	    <input type="submit" value="Send" class="btn btn-send">
+	 	</form>
+	   </fieldset>
+	  </div>
+	</div>
+	<div class="addContact">
+		<fieldset>
+		  <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+		   <form id="contactForm" enctype="multipart/form-data">
+             <legend>Add Contact</legend>
+	         <table>
+	          <tr>
+	          	<td>
+	             <label for="name">Name:</label>
+	            </td>
+	        	<td>
+	        	 <input type="text" name="name" id="name" required>	
+	        	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          	 <label for="lastname">Lastname:</label>	
+	          	</td>
+	          	<td>
+	          	 <input type="text" name="lastname" id="lastname" required>
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          	 <label for="email">Email:</label>	
+	          	</td>
+	          	<td>
+	          	 <input type="email" name="email" id="email" required>	
+	          	</td>
+	          </tr>
+	          <tr>
+	          	<td>
+	          	 <label for="phone">Phone:</label>
+	          	</td>
+	          	<td>
+	          	 <input type="text" name="phone" id="phone">
+	          	</td>
+	          </tr>  
+	          <tr>
+	          	<td>
+	          	 <label for="avatar">Avatar:</label>
+	          	</td>
+	          	<td>
+	          	 <input type="file" name="avatar" id="avatar">
+	          	</td>
+	          </tr>  
+			 </table>	
+				 <input type="submit" id="btn_save" value="Save">
+		   </form>
+	   </fieldset>
+	</div>
+    <div class="bg-blur"></div>
+    <div class="email-success-msg"></div>
+    <div class="delete-window">
+      <div>
+       <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+       <p>Do you want to delete the contact?</p>
+       <span>Are you sure?!</span>
+       <button class="confirmBtn">Yes</button>
+       <button class="cancelBtn">No</button>
+      </div>
+    </div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
