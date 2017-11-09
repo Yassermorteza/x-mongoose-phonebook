@@ -9,9 +9,15 @@
     "mongoose": "^4.12.6",
     "multer": "^1.3.0"
   },
-  "devDependencies": {},
+  "keywords": [
+    "mongoose",
+    "heroku"
+  ],
+  "engines":{
+    "node": "8.9.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
